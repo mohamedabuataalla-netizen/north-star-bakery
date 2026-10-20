@@ -274,3 +274,59 @@ footer a {
     padding: 1.5rem;
   }
 }
+/* Touchstone 4 interactive controls and validation */
+#bakery-favorites {
+  flex-basis: 100%;
+}
+
+#category-filter {
+  max-width: 100%;
+  padding: 0.7rem;
+  font: inherit;
+  color: var(--brown);
+  background: var(--cream);
+  border: 1px solid var(--brown);
+  border-radius: 0.25rem;
+}
+
+#category-filter:focus-visible {
+  outline: 3px solid var(--rust);
+  outline-offset: 4px;
+}
+
+#product-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+#product-options li {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+#product-options button {
+  max-width: 100%;
+  white-space: normal;
+}
+
+#product-options button[aria-pressed="true"] {
+  background: var(--brown);
+  border-color: var(--brown);
+}
+
+.field-error {
+  margin: 0.4rem 0;
+  color: var(--rust);
+  font-weight: bold;
+}
+
+.field-error:empty {
+  display: none;
+}
+
+[aria-invalid="true"] {
+  border: 2px solid var(--rust);
+}
